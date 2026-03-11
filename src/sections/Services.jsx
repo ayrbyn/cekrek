@@ -17,24 +17,24 @@ const serviceStyles = `
   }
   .svc2-bubble {
     width: 90px; height: 90px;
-    background: #1E3A8A;
+    background: #FACC15;
     border-radius: 50%;
     position: absolute;
     right: -18px; top: -22px;
     transition: background 0.3s, transform 0.4s cubic-bezier(.34,1.56,.64,1);
   }
-  .svc2-card:hover .svc2-bubble { background: #FACC15; transform: scale(1.15); }
+  .svc2-card:hover .svc2-bubble { background: #2563EB; transform: scale(1.15); }
   .svc2-num {
     position: absolute;
     bottom: 18px; left: 22px;
-    color: #fff;
+    color: #2563EB;
     font-size: 1.3rem;
     font-weight: 900;
     transition: color 0.3s;
   }
-  .svc2-card:hover .svc2-num { color: #1E3A8A; }
+  .svc2-card:hover .svc2-num { color: #fff; }
   .svc2-icon {
-    color: #1E3A8A;
+    color: #FACC15;
     transition: color 0.3s, transform 0.4s cubic-bezier(.34,1.56,.64,1);
     display: inline-block;
   }
@@ -43,7 +43,7 @@ const serviceStyles = `
     font-size: 1.1rem; font-weight: 800; color: #0f172a;
     margin: 0.9rem 0 0.5rem; transition: color 0.3s;
   }
-  .svc2-card:hover .svc2-title { color: #1E3A8A; }
+  .svc2-card:hover .svc2-title { color: #2563EB; }
   .svc2-desc { font-size: 0.8rem; color: #64748b; line-height: 1.7; }
   .svc2-line {
     width: 0; height: 3px; background: #FACC15;
@@ -55,7 +55,13 @@ const serviceStyles = `
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-blue-950 overflow-hidden">
+    <section 
+      id="services" 
+      className="py-24 overflow-hidden"
+      style={{
+        background: "linear-gradient(135deg, #1E3A8A 0%, #2563EB 50%, #1D4ED8 100%)",
+      }}
+    >
       <style>{serviceStyles}</style>
       <div className="max-w-6xl mx-auto px-4">
         <Reveal className="text-center mb-16">

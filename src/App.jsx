@@ -26,7 +26,6 @@ export default function App() {
       `}</style>
       <Navbar scrollTo={scrollTo} />
       <Hero scrollTo={scrollTo} />
-      <StatsTicker />
       <About />
       <Services />
       <Templates />

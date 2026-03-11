@@ -22,7 +22,7 @@ export default function Navbar({ scrollTo }) {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
-        isSolid ? "bg-blue-950/95 backdrop-blur-xl shadow-2xl" : "bg-transparent"
+        isSolid ? "bg-gradient-to-r from-blue-800/95 to-blue-600/95 backdrop-blur-xl shadow-2xl" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
@@ -45,7 +45,7 @@ export default function Navbar({ scrollTo }) {
           ))}
           <a
             href="#"
-            className="bg-yellow-400 text-blue-900 font-black px-4 py-1.5 rounded-full text-sm hover:bg-yellow-300 transition-all"
+            className="bg-yellow-400 text-blue-800 font-black px-4 py-1.5 rounded-full text-sm hover:bg-yellow-300 transition-all shadow-md hover:shadow-yellow-400/30"
           >
             Booking
           </a>
@@ -77,7 +77,7 @@ export default function Navbar({ scrollTo }) {
             <button
               key={l}
               onClick={() => handleNav(l)}
-              className="text-white/90 hover:text-yellow-400 font-bold text-left py-3.5 border-b border-white/5 text-base active:bg-blue-900/50 active:text-yellow-400 active:pl-4 transition-all duration-300"
+              className="text-white/90 hover:text-yellow-400 font-bold text-left py-3.5 border-b border-white/5 text-base active:bg-blue-800/50 active:text-yellow-400 active:pl-4 transition-all duration-300"
               style={{
                 transform: menuOpen ? "translateY(0)" : "translateY(-15px)",
                 opacity: menuOpen ? 1 : 0,
@@ -89,7 +89,7 @@ export default function Navbar({ scrollTo }) {
           ))}
           <a
             href="#"
-            className="mt-6 flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-950 font-black text-center py-4 rounded-full active:scale-95 transition-all shadow-lg hover:shadow-yellow-400/30"
+            className="mt-6 flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-blue-800 font-black text-center py-4 rounded-full active:scale-95 transition-all shadow-lg hover:shadow-yellow-400/30"
             style={{
               transform: menuOpen ? "translateY(0)" : "translateY(-15px)",
               opacity: menuOpen ? 1 : 0,

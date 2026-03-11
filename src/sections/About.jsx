@@ -16,7 +16,7 @@ export default function About() {
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-48 h-48 rounded-full bg-yellow-400/20" />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-blue-100" />
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-blue-900 to-blue-700 p-10 text-white">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-blue-700 to-blue-500 p-10 text-white">
               <div className="grid grid-cols-2 gap-6">
                 {STATS.map((s) => (
                   <div key={s.label} className="text-center">
@@ -32,7 +32,7 @@ export default function About() {
                 <Camera size={28} color="#FACC15" />
                 <div>
                   <div className="font-black text-white">CekrekBox</div>
-                  <div className="text-blue-300 text-xs">Est. 2019 · Medan</div>
+                  <div className="text-blue-300 text-xs">Est. 2026 · Medan</div>
                 </div>
               </div>
             </div>
@@ -43,12 +43,12 @@ export default function About() {
           <span className="text-yellow-500 font-bold text-sm uppercase tracking-widest">
             Tentang Kami
           </span>
-          <h2 className="text-4xl font-black text-blue-900 mt-3 mb-5 leading-tight">
-            Lebih dari Sekadar<br />
+          <h2 className="text-4xl font-black text-blue-800 mt-3 mb-5 leading-tight">
+            Lebih dari Sekedar<br />
             <span className="text-yellow-400">Photobooth</span>
           </h2>
           <p className="text-gray-500 mb-4 leading-relaxed text-base">
-            CekrekBox hadir sejak 2019 sebagai penyedia photobooth rental terpercaya di Medan. Kami
+            CekrekBox hadir sejak 2026 sebagai penyedia photobooth rental terpercaya di Medan. Kami
             melayani berbagai acara publik mulai dari pernikahan, ulang tahun, pameran, hingga acara
             korporat.
           </p>
@@ -59,7 +59,7 @@ export default function About() {
           <div className="mt-8 flex flex-col gap-3">
             {HIGHLIGHTS.map((item) => (
               <div key={item} className="flex items-center gap-3 text-sm text-gray-700">
-                <CheckCircle size={16} color="#1D4ED8" className="flex-shrink-0" />
+                <CheckCircle size={16} color="#2563EB" className="flex-shrink-0" />
                 {item}
               </div>
             ))}
