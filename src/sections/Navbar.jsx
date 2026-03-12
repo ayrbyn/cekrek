@@ -29,7 +29,7 @@ export default function Navbar({ scrollTo }) {
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
           <Camera size={22} color="#FACC15" />
           <span className="font-black text-xl text-white tracking-wide">
-            Cekrek<span className="text-yellow-400">Box</span>
+            Photo<span className="text-yellow-400">Booth</span>
           </span>
         </button>
 
@@ -47,7 +47,7 @@ export default function Navbar({ scrollTo }) {
             href="#"
             className="bg-yellow-400 text-blue-800 font-black px-4 py-1.5 rounded-full text-sm hover:bg-yellow-300 transition-all shadow-md hover:shadow-yellow-400/30"
           >
-            Booking
+            Lorem Ipsum
           </a>
         </div>
 
@@ -96,7 +96,7 @@ export default function Navbar({ scrollTo }) {
               transitionDelay: menuOpen ? `${NAV_LINKS.length * 50 + 100}ms` : "0ms",
             }}
           >
-            <MessageCircle size={20} /> Booking Sekarang
+            <MessageCircle size={20} /> Lorem Ipsum
           </a>
         </div>
       </div>

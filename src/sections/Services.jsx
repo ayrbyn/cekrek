@@ -65,9 +65,9 @@ export default function Services() {
       <style>{serviceStyles}</style>
       <div className="max-w-6xl mx-auto px-4">
         <Reveal className="text-center mb-16">
-          <span className="text-yellow-400 font-bold text-sm uppercase tracking-widest">Layanan</span>
+          <span className="text-yellow-400 font-bold text-sm uppercase tracking-widest">Lorem Ipsum</span>
           <h2 className="text-4xl font-black text-white mt-3">
-            Yang Kami <span className="text-yellow-400">Tawarkan</span>
+            Dolor Sit <span className="text-yellow-400">Amet</span>
           </h2>
         </Reveal>
 

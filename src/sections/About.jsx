@@ -3,9 +3,9 @@ import Reveal from "../components/Reveal";
 import { STATS } from "../data";
 
 const HIGHLIGHTS = [
-  "Peralatan kamera DSLR & mirrorless profesional",
-  "Tim operator berpengalaman & ramah",
-  "Setup dan breakdown termasuk dalam paket",
+  "Lorem ipsum dolor sit amet",
+  "Consectetur adipiscing elit",
+  "Sed do eiusmod tempor incididunt",
 ];
 
 export default function About() {
@@ -31,8 +31,8 @@ export default function About() {
               <div className="mt-8 border-t border-white/20 pt-6 flex items-center gap-3">
                 <Camera size={28} color="#FACC15" />
                 <div>
-                  <div className="font-black text-white">CekrekBox</div>
-                  <div className="text-blue-300 text-xs">Est. 2026 · Medan</div>
+                  <div className="font-black text-white">PhotoBooth</div>
+                  <div className="text-blue-300 text-xs">Est. 2026 · Lorem Ipsum</div>
                 </div>
               </div>
             </div>
@@ -41,20 +41,17 @@ export default function About() {
 
         <Reveal direction="right" delay={0.15}>
           <span className="text-yellow-500 font-bold text-sm uppercase tracking-widest">
-            Tentang Kami
+            Lorem Ipsum
           </span>
           <h2 className="text-4xl font-black text-blue-800 mt-3 mb-5 leading-tight">
-            Lebih dari Sekedar<br />
-            <span className="text-yellow-400">Photobooth</span>
+            Dolor Sit Amet<br />
+            <span className="text-yellow-400">Consectetur</span>
           </h2>
           <p className="text-gray-500 mb-4 leading-relaxed text-base">
-            CekrekBox hadir sejak 2026 sebagai penyedia photobooth rental terpercaya di Medan. Kami
-            melayani berbagai acara publik mulai dari pernikahan, ulang tahun, pameran, hingga acara
-            korporat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <p className="text-gray-500 leading-relaxed text-base">
-            Dengan peralatan berkualitas tinggi, desain template eksklusif, dan tim operator
-            profesional, kami memastikan setiap momen terabadikan dengan sempurna dan penuh gaya.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div className="mt-8 flex flex-col gap-3">
             {HIGHLIGHTS.map((item) => (

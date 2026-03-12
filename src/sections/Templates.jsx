@@ -3,14 +3,17 @@ import { TEMPLATES } from "../data";
 
 const styles = `
   @keyframes slide-templates {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-50%, 0, 0); }
   }
   .tmpl-track {
     display: flex;
     width: max-content;
-    animation: slide-templates 40s linear infinite;
+    animation: slide-templates 50s linear infinite;
     will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform-style: preserve-3d;
     padding: 2rem 0;
   }
   .tmpl-track:hover {
@@ -63,11 +66,16 @@ const styles = `
     border-radius: 99px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   }
+  @media (max-width: 640px) {
+    .tmpl-track {
+      animation-duration: 70s;
+    }
+  }
 `;
 
 export default function Templates() {
-  // Duplicate templates for seamless infinite scroll
-  const items = [...TEMPLATES, ...TEMPLATES, ...TEMPLATES, ...TEMPLATES];
+  // Duplicate items 2 times for seamless loop (optimized from 4x)
+  const items = [...TEMPLATES, ...TEMPLATES];
 
   return (
     <section id="templates" className="py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
@@ -76,13 +84,13 @@ export default function Templates() {
       {/* Header */}
       <Reveal className="text-center mb-10 px-4">
         <span className="text-yellow-500 font-bold text-sm uppercase tracking-widest">
-          Galeri Template
+          Lorem Ipsum
         </span>
         <h2 className="text-4xl font-black text-blue-800 mt-3">
-          Desain <span className="text-yellow-400">Eksklusif</span> Kami
+          Dolor Sit <span className="text-yellow-400">Amet</span>
         </h2>
         <p className="text-gray-400 mt-3 max-w-lg mx-auto text-sm">
-          Jelajahi berbagai desain polaroid premium kami. Cocok untuk mengabadikan momen spesial di setiap acaramu.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </Reveal>
 
@@ -105,7 +113,7 @@ export default function Templates() {
               
               <div className="mt-5 text-center px-2">
                 <h3 className="font-black text-blue-900 text-lg leading-tight">{t.name}</h3>
-                <p className="text-yellow-500 font-bold text-xs mt-1 uppercase tracking-widest">CekrekBox</p>
+                <p className="text-yellow-500 font-bold text-xs mt-1 uppercase tracking-widest">PhotoBooth</p>
               </div>
             </div>
           ))}

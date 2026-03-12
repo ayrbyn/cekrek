@@ -29,7 +29,7 @@ export function StripTemplate({ t, big = false }) {
         </div>
       ))}
       <div className="text-center font-black tracking-widest" style={{ fontSize: 9, color: t.accent, lineHeight: "18px", flexShrink: 0 }}>
-        CEKREKBOX
+        PHOTOBOOTH
       </div>
     </div>
   );
@@ -68,7 +68,7 @@ export function PolaroidTemplate({ t, big = false }) {
           className="text-center font-black tracking-widest flex-shrink-0"
           style={{ fontSize: 9, color: t.accent, paddingTop: 4, lineHeight: "14px" }}
         >
-          CEKREKBOX
+          PHOTOBOOTH
         </div>
       </div>
     </div>

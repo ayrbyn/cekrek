@@ -51,19 +51,19 @@ export default function Hero({ scrollTo }) {
           <div className="flex items-center gap-3 mb-6 lg:mb-8">
             <span className="w-10 h-[2px] bg-yellow-400 rounded-full" />
             <span className="text-blue-300 text-xs sm:text-sm font-bold tracking-[0.2em] relative top-px">
-              BIKIN ACARAMU MAKIN BERKESAN
+              LOREM IPSUM DOLOR SIT AMET
             </span>
           </div>
           
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-lg flex items-center justify-center lg:justify-start gap-1">
-            Cekrek
+            Photo
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">
-              Box
+              Booth
             </span>
           </h1>
           
           <p className="text-lg sm:text-xl text-blue-200 font-medium mb-10 max-w-xl leading-relaxed">
-            Abadikan setiap momen spesial dengan gaya. Cetak instan, desain premium, kenangan selamanya.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -71,14 +71,14 @@ export default function Hero({ scrollTo }) {
               onClick={() => scrollTo("pricing")}
               className="group flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-300 hover:to-yellow-400 text-blue-800 font-black px-8 py-4.5 rounded-full text-lg shadow-[0_8px_25px_rgba(250,204,21,0.3)] transition-all ease-out hover:scale-[1.03] active:scale-95"
             >
-              Lihat Paket Spesial
+              Lorem Ipsum
               <ArrowRight size={20} className="group-hover:translate-x-1.5 transition-transform" />
             </button>
             <button
               onClick={() => scrollTo("templates")}
               className="group flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 backdrop-blur-md text-white font-bold px-8 py-4.5 rounded-full text-lg border border-white/20 transition-all ease-out hover:scale-[1.03] active:scale-95"
             >
-              <Image size={20} className="group-hover:text-yellow-400 transition-colors" /> Lihat Template
+              <Image size={20} className="group-hover:text-yellow-400 transition-colors" /> Dolor Sit Amet
             </button>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function Hero({ scrollTo }) {
                  <Image size={48} className="text-white/50 group-hover:scale-110 transition-transform duration-500" />
                </div>
             </div>
-            <p className="absolute bottom-3 sm:bottom-5 left-0 right-0 text-center font-handwriting text-gray-800 text-sm sm:text-base font-bold italic opacity-80">Wedding 2023</p>
+            <p className="absolute bottom-3 sm:bottom-5 left-0 right-0 text-center font-handwriting text-gray-800 text-sm sm:text-base font-bold italic opacity-80">Lorem Ipsum 2023</p>
           </div>
 
           {/* Polaroid 2 (Top Right) */}
@@ -104,7 +104,7 @@ export default function Hero({ scrollTo }) {
                  <span className="text-5xl font-black text-white/40 group-hover:text-white/60 transition-colors duration-500">360°</span>
                </div>
             </div>
-            <p className="absolute bottom-3 sm:bottom-5 left-0 right-0 text-center font-handwriting text-gray-800 text-sm sm:text-base font-bold italic opacity-80">Sweet 17th</p>
+            <p className="absolute bottom-3 sm:bottom-5 left-0 right-0 text-center font-handwriting text-gray-800 text-sm sm:text-base font-bold italic opacity-80">Ipsum Dolor 2023</p>
           </div>
 
           {/* Polaroid 3 (Center Front) */}
@@ -120,7 +120,7 @@ export default function Hero({ scrollTo }) {
                  <div className="w-8 h-8 bg-blue-600/40 rounded-sm"></div>
                </div>
             </div>
-            <p className="absolute bottom-4 sm:bottom-6 left-0 right-0 text-center font-handwriting text-blue-800 text-lg sm:text-xl font-black px-2">CekrekBox Best Shot!</p>
+            <p className="absolute bottom-4 sm:bottom-6 left-0 right-0 text-center font-handwriting text-blue-800 text-lg sm:text-xl font-black px-2">PhotoBooth!</p>
           </div>
 
         </div>

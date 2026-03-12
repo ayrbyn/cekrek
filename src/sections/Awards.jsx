@@ -2,15 +2,18 @@ import Reveal from "../components/Reveal";
 import { AWARDS } from "../data";
 
 const styles = `
-  @keyframes slide-left {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  @keyframes slide-awards {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-50%, 0, 0); }
   }
   .awards-track {
     display: flex;
     width: max-content;
-    animation: slide-left 28s linear infinite;
+    animation: slide-awards 40s linear infinite;
     will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform-style: preserve-3d;
   }
   .awards-track:hover {
     animation-play-state: paused;
@@ -82,11 +85,16 @@ const styles = `
     border-radius: 99px;
     margin: 8px 0;
   }
+  @media (max-width: 640px) {
+    .awards-track {
+      animation-duration: 60s;
+    }
+  }
 `;
 
 export default function Awards() {
-  // Quadruple the items for a seamless infinite loop
-  const items = [...AWARDS, ...AWARDS, ...AWARDS, ...AWARDS];
+  // Duplicate items 2 times for seamless loop (optimized from 4x)
+  const items = [...AWARDS, ...AWARDS];
 
   return (
     <section id="awards" className="py-24 bg-white overflow-hidden">
@@ -94,13 +102,13 @@ export default function Awards() {
 
       <Reveal className="text-center mb-14 px-4">
         <span className="text-yellow-500 font-bold text-sm uppercase tracking-widest">
-          Penghargaan
+          Lorem Ipsum
         </span>
         <h2 className="text-4xl font-black text-blue-800 mt-3">
-          Prestasi yang <span className="text-yellow-400">Kami Raih</span>
+          Dolor Sit <span className="text-yellow-400">Amet</span>
         </h2>
         <p className="text-gray-400 mt-3 text-sm max-w-md mx-auto">
-          Dipercaya oleh ratusan klien dan diakui oleh industri event Indonesia.
+          Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </Reveal>
 

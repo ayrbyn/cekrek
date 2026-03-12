@@ -8,13 +8,13 @@ export default function Pricing() {
       <div className="max-w-5xl mx-auto px-4">
         <Reveal className="text-center mb-16">
           <span className="text-yellow-400 font-bold text-sm uppercase tracking-widest">
-            Harga Paket
+            Lorem Ipsum
           </span>
           <h2 className="text-4xl font-black text-white mt-3">
-            Pilih Paket <span className="text-yellow-400">Terbaikmu</span>
+            Dolor Sit <span className="text-yellow-400">Amet</span>
           </h2>
           <p className="text-white mt-3 text-sm max-w-xl mx-auto">
-            Semua paket sudah termasuk setup, operator, dan cetak foto tanpa batas.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </Reveal>
 
@@ -35,7 +35,7 @@ export default function Pricing() {
                   <div className="bg-yellow-400 py-2 flex items-center justify-center gap-2">
                     <Star size={14} color="#2563EB" fill="#2563EB" />
                     <span className="text-blue-800 text-xs font-black uppercase tracking-widest">
-                      Paling Populer
+                      Lorem Ipsum
                     </span>
                   </div>
                 )}
@@ -48,8 +48,8 @@ export default function Pricing() {
                 </div>
                 <div className="bg-white flex-1 px-8 py-7 flex flex-col justify-between">
                   <ul className="space-y-3 mb-8">
-                    {p.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm text-gray-600">
+                    {p.features.map((f, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-gray-600">
                         <CheckCircle size={15} color="#2563EB" className="flex-shrink-0 mt-0.5" />
                         {f}
                       </li>
@@ -65,7 +65,7 @@ export default function Pricing() {
                       color: p.popular ? "#2563EB" : "#fff",
                     }}
                   >
-                    <MessageCircle size={15} /> Pesan Sekarang
+                    <MessageCircle size={15} /> Lorem Ipsum
                   </a>
                 </div>
               </div>
@@ -75,11 +75,11 @@ export default function Pricing() {
 
         <Reveal className="text-center mt-12">
           <p className="text-white text-sm">
-            Butuh paket custom?{" "}
-            <a href="https://wa.me/6281234567890" className="text-yellow-400 font-bold hover:underline">
-              Hubungi kami
+            Lorem Ipsum Dolor?{" "}
+            <a href="#" className="text-yellow-400 font-bold hover:underline">
+              Sit Amet
             </a>{" "}
-            untuk penawaran spesial.
+            consectetur adipiscing elit.
           </p>
         </Reveal>
       </div>

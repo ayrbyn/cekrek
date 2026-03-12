@@ -13,7 +13,7 @@ export default function Footer({ scrollTo }) {
         <div className="flex items-center gap-2">
           <Camera size={20} color="#FACC15" />
           <span className="font-black text-xl">
-            Cekrek<span className="text-yellow-400">Box</span>
+            Photo<span className="text-yellow-400">Booth</span>
           </span>
         </div>
         <div className="flex gap-5 flex-wrap justify-center">
@@ -27,7 +27,7 @@ export default function Footer({ scrollTo }) {
             </button>
           ))}
         </div>
-        <div className="text-white text-xs">© 2026 CekrekBox. All rights reserved.</div>
+        <div className="text-white text-xs">© 2026 PhotoBooth. Lorem Ipsum.</div>
       </div>
     </footer>
   );
